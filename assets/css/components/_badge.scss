@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Badge
+   ========================================================================== */
+
+.badge {
+  font-size: 12px;
+  padding: 2px 5px;
+  &--users {
+    background-color: rgb(231,246,239);
+    &::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f007";
+      color: #37b779;
+      margin-right: 5px;
+    }
+  }
+  &--trending {
+    background-color: rgba(255, 96, 64, 0.12);;
+    &::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f06d";
+      color: #ff512f;
+      margin-right: 5px;
+    }
+  }
+}

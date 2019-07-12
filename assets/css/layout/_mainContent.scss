@@ -12,7 +12,14 @@
     @include make-col-ready();
   }
   &__header {
-
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      color: $gray-500;
+      font-size: 16px;
+      font-weight: normal;
+    }
   }
   &__tabs {
 

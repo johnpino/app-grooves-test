@@ -52,8 +52,7 @@ abbr[data-original-title] {
           text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none; }
+  text-decoration-skip-ink: none; }
 
 address {
   margin-bottom: 1rem;
@@ -2751,6 +2750,29 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
+/* ==========================================================================
+   Badge
+   ========================================================================== */
+.badge {
+  font-size: 12px;
+  padding: 2px 5px; }
+  .badge--users {
+    background-color: #e7f6ef; }
+    .badge--users::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f007";
+      color: #37b779;
+      margin-right: 5px; }
+  .badge--trending {
+    background-color: rgba(255, 96, 64, 0.12); }
+    .badge--trending::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f06d";
+      color: #ff512f;
+      margin-right: 5px; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -2779,8 +2801,6 @@ input[type="search"]::-webkit-search-results-decoration {
     min-width: 245px;
     text-align: center; }
     .header__input::-webkit-input-placeholder {
-      color: #fff; }
-    .header__input::-moz-placeholder {
       color: #fff; }
     .header__input:-ms-input-placeholder {
       color: #fff; }
@@ -2842,5 +2862,13 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px; }
+
+.mainContent__header h1 {
+  font-size: 22px; }
+
+.mainContent__header h2 {
+  color: #adb5bd;
+  font-size: 16px;
+  font-weight: normal; }
 
 /*# sourceMappingURL=main.css.map */
