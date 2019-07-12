@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.sidebar {
+  & {
+    background: $white;
+    border-right: 1px solid $gray-200;
+    height: calc(100vh - 48px);
+    position: sticky !important;
+    padding: 0 !important;
+    top: 48px;
+    z-index: 1000;
+    flex: 0 0 15%;
+    max-width: 15%;
+    @include make-col-ready();
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    color: $black;
+    padding: 15px;
+    border-bottom: 1px solid $gray-200;
+    i {
+      min-width: 30px;
+      text-align: center;
+    }
+  }
+}

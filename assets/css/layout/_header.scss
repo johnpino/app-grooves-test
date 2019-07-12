@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+  background-color: $primary;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > i {
+      font-size: 28px;
+      margin-left: 10px;
+    }
+  }
+  &__input {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 14px;
+    color: white;
+    height: 28px;
+    padding: 0 10px;
+    min-width: 245px;
+    text-align: center;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  &__button {
+    background: none;
+    border: none;
+    color: white;
+  }
+  i {
+    color: $white;
+  }
+  form {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
