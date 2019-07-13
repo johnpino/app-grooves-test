@@ -83,6 +83,7 @@
     font-size: 18px;
   }
   &__tabs {
+    border-bottom: 2px solid $primary;
     display: flex;
     list-style: none;
     padding: 0;

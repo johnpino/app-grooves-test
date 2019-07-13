@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+
+.button {
+  &--seeMore {
+    background-color: $white;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-shadow: 1px 1px $gray-400;
+    color: $primary;
+    padding: 10px 0;
+    width: 100%;
+  }
+}

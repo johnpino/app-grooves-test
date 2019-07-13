@@ -2942,6 +2942,11 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
+hr {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 15px 0; }
+
 /* ==========================================================================
    Badge
    ========================================================================== */
@@ -3026,6 +3031,18 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 0;
   top: 50%;
   transform: translateY(-50%); }
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.button--seeMore {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 1px 1px #ced4da;
+  color: #3981e5;
+  padding: 10px 0;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Header
@@ -3193,6 +3210,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 18px; }
 
 .mainContent__tabs {
+  border-bottom: 2px solid #3981e5;
   display: flex;
   list-style: none;
   padding: 0; }
