@@ -2992,13 +2992,19 @@ input[type="search"]::-webkit-search-results-decoration {
 /*--------------------------------------------------------------
 # Post Block
 --------------------------------------------------------------*/
-.post__container {
+.post__container--fluid .post__row {
   width: 100%; }
 
+.post__container--fluid .post__block {
+  max-width: 100%;
+  padding-right: 100px; }
+
+.post__row {
+  display: inline-block; }
+
 .post__block {
-  display: inline-block;
   min-height: 150px;
-  max-width: 500px; }
+  position: relative; }
   .post__block img {
     float: left;
     margin-right: 20px; }
@@ -3010,6 +3016,16 @@ input[type="search"]::-webkit-search-results-decoration {
 .post__infoPosts, .post__infoContributors {
   color: #737373;
   font-size: 14px; }
+
+.post__seeAll {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  color: #3981e5;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /*--------------------------------------------------------------
 # Header
@@ -3197,6 +3213,7 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #737373;
     font-size: 16px; }
   .mainContent__summary h4 {
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
