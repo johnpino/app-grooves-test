@@ -5,20 +5,14 @@
 .post {
   $root: &;
   &__container {
-    &--fluid {
-      #{$root}__row {
-        width: 100%;
-      }
-      #{$root}__block {
-        max-width: 100%;
-        padding-right: 100px;
-      }
-    }
+    @include make-container(0);
   }
   &__row {
-    display: inline-block;
+    @include make-row(0);
   }
   &__block {
+    @include make-col-ready(0);
+    @include make-col(12);
     min-height: 150px;
     position: relative;
     img {
@@ -30,6 +24,18 @@
     }
     p {
       font-size: 14px;
+    }
+    &--pr {
+      padding-right: 100px;
+    }
+    &--6 {
+      padding: 10px;
+      @include make-col(6);
+      img {
+        float: initial;
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   }
   &__infoPosts, &__infoContributors {

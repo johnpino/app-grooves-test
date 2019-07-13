@@ -5,16 +5,19 @@
 .sidebar {
   & {
     background: $white;
-    //border-right: 1px solid $gray-200;
     box-shadow: 0 0 4px $gray-400;
+    display: none;
     height: calc(100vh - 48px);
     position: sticky !important;
     padding: 0 !important;
     top: 48px;
-    z-index: 1000;
-    flex: 0 0 25%;
-    max-width: 25%;
-    @include make-col-ready();
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+      display: block;
+      flex: 0 0 25%;
+      max-width: 25%;
+      @include make-col-ready();
+    }
   }
   &__navigation {
     display: flex;

@@ -9,6 +9,15 @@
   position: sticky;
   top: 0;
   z-index: 99999;
+  &__toggler {
+    background: none;
+    border: none;
+    font-size: 25px;
+    display: block;
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
   &__navigation {
     display: flex;
     align-items: center;
@@ -28,10 +37,14 @@
     color: white;
     height: 28px;
     padding: 0 10px;
-    min-width: 245px;
     text-align: center;
+    min-width: initial;
+    width: 55px;
     &::placeholder {
       color: $white;
+    }
+    @include media-breakpoint-up(lg) {
+      min-width: 245px;
     }
   }
   &__button {

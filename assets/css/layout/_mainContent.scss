@@ -7,27 +7,38 @@
     background-color: $white;
     box-shadow: 0 0 4px $gray-400;
     margin-left: auto;
-    max-width: 73%;
-    flex: 0 0 auto;
     @include make-col-ready(0);
+    @include make-col(12);
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 auto;
+      max-width: 73%;
+      z-index: -9;
+    }
   }
   &__header {
     padding: 1rem;
     @include make-row(0);
   }
   &__icon {
-    max-width: 10%;
-    flex: 0 0 10%;
+    max-width: 30%;
+    flex: 0 0 30%;
     @include make-col-ready(0);
+    @include media-breakpoint-up(lg) {
+      max-width: 10%;
+      flex: 0 0 10%;
+    }
     img {
       width: 100%;
     }
   }
   &__information {
-    max-width: 90%;
+    max-width: 70%;
     flex: 0 0 auto;
     position: relative;
     @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      max-width: 90%;
+    }
     h1 {
       font-size: 22px;
     }
@@ -44,7 +55,10 @@
     padding: 10px 20px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 40px;
+    @include media-breakpoint-up(lg) {
+      top: 0;
+    }
     i {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -72,11 +86,21 @@
     }
   }
   &__os {
+    display: none;
     .fa-android {
       color: #37b779;
     }
     .fa-apple {
       color: #3981e5;
+    }
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+  &__topLinks {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
     }
   }
   &__headLine {
@@ -101,7 +125,7 @@
     }
   }
   &__summary {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
     h3 {
       color: $gray-500;
       font-size: 16px;
@@ -110,5 +134,23 @@
       font-size: 22px;
       margin-bottom: 2rem;
     }
+  }
+  &__titleHighlighted {
+    background-color: $gray-200;
+    border-top: 2px solid $primary;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 1rem -1rem;
+    padding: 1rem;
+  }
+  &__quote {
+    background-color: $gray-200;
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    text-align: center;
   }
 }
