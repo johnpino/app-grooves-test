@@ -1,8 +1,11 @@
 /*--------------------------------------------------------------
 # Base Styles
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
 body {
   background-color: $gray-100;
+  font-family: "Roboto", sans-serif;
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,

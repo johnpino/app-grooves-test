@@ -7,11 +7,27 @@
     background-color: $white;
     box-shadow: 0 0 4px $gray-400;
     margin-left: auto;
-    max-width: 84%;
+    max-width: 73%;
     flex: 0 0 auto;
-    @include make-col-ready();
+    @include make-col-ready(0);
   }
   &__header {
+    padding: 1rem;
+    @include make-row(0);
+  }
+  &__icon {
+    max-width: 10%;
+    flex: 0 0 10%;
+    @include make-col-ready(0);
+    img {
+      width: 100%;
+    }
+  }
+  &__information {
+    max-width: 90%;
+    flex: 0 0 auto;
+    position: relative;
+    @include make-col-ready();
     h1 {
       font-size: 22px;
     }
@@ -21,7 +37,76 @@
       font-weight: normal;
     }
   }
+  &__cta {
+    background-color: $primary;
+    border-radius: 2px;
+    color: $white;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    i {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &__attributes {
+    display: flex;
+    margin-bottom: 10px;
+    > div {
+      margin-right: 15px;
+    }
+  }
+  &__badges {
+    margin-bottom: 10px;
+  }
+  &__reviews {
+    > i {
+      color: #f4b61e;
+    }
+    span {
+      color: $gray-500;
+    }
+  }
+  &__os {
+    .fa-android {
+      color: #37b779;
+    }
+    .fa-apple {
+      color: #3981e5;
+    }
+  }
+  &__headLine {
+    font-size: 18px;
+  }
   &__tabs {
-
+    display: flex;
+    list-style: none;
+    padding: 0;
+    li {
+      background-color: $gray-100;
+      flex-grow: 1;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .active {
+      background-color: $white;
+      border-top: 3px solid $primary;
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+  &__summary {
+    padding: 1rem;
+    h3 {
+      color: $gray-500;
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 22px;
+    }
   }
 }

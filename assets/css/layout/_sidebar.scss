@@ -5,14 +5,15 @@
 .sidebar {
   & {
     background: $white;
-    border-right: 1px solid $gray-200;
+    //border-right: 1px solid $gray-200;
+    box-shadow: 0 0 4px $gray-400;
     height: calc(100vh - 48px);
     position: sticky !important;
     padding: 0 !important;
     top: 48px;
     z-index: 1000;
-    flex: 0 0 15%;
-    max-width: 15%;
+    flex: 0 0 25%;
+    max-width: 25%;
     @include make-col-ready();
   }
   &__navigation {

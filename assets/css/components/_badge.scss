@@ -3,10 +3,11 @@
    ========================================================================== */
 
 .badge {
+  border-radius: 2px;
   font-size: 12px;
   padding: 2px 5px;
   &--users {
-    background-color: rgb(231,246,239);
+    background-color: rgb(231, 246, 239);
     &::before {
       font-family: "Font Awesome 5 Pro";
       font-weight: 900;
@@ -16,12 +17,32 @@
     }
   }
   &--trending {
-    background-color: rgba(255, 96, 64, 0.12);;
+    background-color: rgba(255, 96, 64, 0.12);
     &::before {
       font-family: "Font Awesome 5 Pro";
       font-weight: 900;
       content: "\f06d";
       color: #ff512f;
+      margin-right: 5px;
+    }
+  }
+  &--editorsChoide {
+    background-color: rgba(171, 102, 232, 0.12);
+    &::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f890";
+      color: #a65ce7;
+      margin-right: 5px;
+    }
+  }
+  &--inApp {
+    background-color: rgba(102, 102, 102, 0.12);
+    &::before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f09d";
+      color: #737373;
       margin-right: 5px;
     }
   }
